@@ -1,0 +1,21 @@
+.container {
+    width: 50%;
+    border: 1px solid blue;
+    display: flex; 
+    /*flex-direction: column-reverse;*/
+    flex-wrap: wrap;
+}
+
+.container div {
+    position: relative;
+    width: 40%;
+    border: 1px solid yellow;
+}      
+
+.child1 {
+    order: 1; /*se va a deplegar en el contenedor antes, entre mayor el numero, antes se despliega*/
+}
+
+.child2{
+    order: 2;
+}

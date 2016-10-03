@@ -1,0 +1,27 @@
+.page-wrapper {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    font-size: 1.4em;
+}
+
+body {
+    font-size: 18px;   
+}
+
+.navmenu li {
+     display: inline;
+	margin-left: 2em;
+}
+
+#menu {
+    color: darkred;
+}
+
+a:visited {
+    color: dimgrey;
+}
+
+a:hover {
+    color: yellow;
+}
