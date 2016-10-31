@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form oninput="total.value = (nights.valueAsNumber * 50) + ((guests.valueAsNumber - 1) * 10)">
+       <!--Forms-->
+       <label>Nombre: </label>
+       <input type="text" placeholder="Write Here" required>
+
+       <label>Rola su tipo de sangre: </label>
+       <input type="text" placeholder="Write Here" required>
+
+       <label>Email: </label>
+       <input type="email" id="emailAddr" placeholder="Write Here" required>
+
+       <label>Confirm Email: </label>
+       <input type="email" oninput="check(this)" placeholder="Write Here" required>
+
+       <label>Arrival Date: </label>
+       <input type="date" id="arrivalDate" name="arrivalDate" placeholder="Write Here" required>
+
+       <label>Number of Nights: (Rooms = ¢50 night)</label>
+       <input type="number" id="nights" value="1" min="1" max="31" placeholder="Write Here" required>
+
+       <label>Number of Guests: (each additional guest adds $10.00 per night)</label>
+       <input type="number" id="guests" name="guests" value="1" min="1" max="4" required>
+
+       <label>Estimated Total: </label>
+
+       <output id="total">¢50</output>.00
+       <br><br>
+       
+       <input type="submit" value="Request Reservation"/>
+   </form>
+   
+   
+   <script>
+   function check(input) {
+       if(input.value != document.getElementById("emailAddr").value) {
+                input.setCustomValidity("Los emails no son iguales, te pasas compa");
+           }else{
+               input.setCustomValidity("");
+           }
+   }
+    </script>
+</body>
+</html>

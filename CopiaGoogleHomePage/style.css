@@ -13,7 +13,7 @@ body {
 
 nav {
     text-align: center;
-    float: right;    
+    float: right; 
 }
 
 nav ul li{
@@ -22,7 +22,7 @@ nav ul li{
 }
 
 .googleImage {
-    position: fixed;
+    position: absolute;
     left: 40%;
     top:30%;
 }
@@ -40,8 +40,8 @@ form input {
 
 .botones {
     position: absolute;
-    left 45%;
-    top 50%;
+    left: 45%;
+    top: 50%;
 }
 
 .footer {
