@@ -1,0 +1,28 @@
+*  {
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-mx-box-sizing: border-box;
+}
+
+body {
+    color: blue;
+    margin: 0;
+}
+
+header {
+    color: red;
+}
+
+ul {
+    color: yellow;
+}
+
+img {
+    width: 33.33%;
+    border: 2px solid green;
+}
+
+nav li {
+    display: inline;
+}
