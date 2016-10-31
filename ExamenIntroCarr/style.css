@@ -3,11 +3,13 @@ box-sizing: border-box;
 -webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
 -mx-box-sizing: border-box;
+    padding: 4px;
 }
 
 body {
     color: blue;
     margin: 0;
+    border: 2px solid blue;
 }
 
 header {
@@ -21,6 +23,21 @@ ul {
 img {
     width: 33.33%;
     border: 2px solid green;
+}
+
+nav {
+    align-items: center;
+    border: 2px dashed red;
+}
+
+main{
+	border: 2px solid green;
+}
+#Llamas{
+	border: 2px dashed navy;
+}
+#Tucanes{
+	border: 2px dashed purple;
 }
 
 nav li {
