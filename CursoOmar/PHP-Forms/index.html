@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pag 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="site2.php" method="post" oninput="total.value = (nights.valueAsNumber * 50) + ((guests.valueAsNumber - 1) * 10)">
+            <!--Forms-->
+            <label>Nombre: </label>
+            <input  type="text" name="yourname" placeholder="Write Here" required/>
+
+            <label>Rola su tipo de sangre: </label>
+            <input type="text" name="sangre" placeholder="Write Here" required/>
+
+            <label>Email: </label>
+            <input type="email" name="email" id="email" placeholder="Write Here" required/>
+
+            <label>Confirm Email: </label>
+            <input type="email" name="emailCon" oninput="check(this)" placeholder="Write Here" required/>
+
+            <label>Arrival Date: </label>
+            <input type="date" name="arrDate" id="arrDate" name="arrivalDate" placeholder="Write Here" required/>
+
+            <label>Number of Nights: (Rooms = ¢50 night)</label>
+            <input type="number" name="nights" id="nights" value="1" min="1" max="31" placeholder="Write Here" required/>
+
+            <label>Number of Guests: (each additional guest adds $10.00 per night)</label>
+            <input type="number" name="guests" id="guests" name="guests" value="1" min="1" max="4" required/>
+
+            <label>Estimated Total: </label>
+
+            <output id="total">¢50</output>.00
+            <br><br>
+
+            <script>
+                function check(input) {
+                    if (input.value != document.getElementById("email").value) {
+                        input.setCustomValidity("Los emails no son iguales, te pasas compa");
+                    } else {
+                        input.setCustomValidity("");
+                    }
+                }
+            </script>
+
+            <input type="submit" value="Request Reservation" />
+  </form>
+  
+
+
+
+</body>
+
+</html>
