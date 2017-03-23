@@ -28,6 +28,7 @@ form {
 }
 
 input {
+    
     font-family: sans-serif;
     border: 1px solid #ccc;
     font-size: 20px;
@@ -62,22 +63,12 @@ input:hover, input:focus{
     -mx-box-shadow: rgba(0,0,0,0.2) 0px 0px 8px;
 }
 
-
 .form label {
     color: #999999;
     margin-left: 10px;
-    
 }
 
 .submit input {
     width: 100px;
     height: 40px;
 }
-
-
-
-
-
-
-
-

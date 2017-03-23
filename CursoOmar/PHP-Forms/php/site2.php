@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pag 2</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
 
 <body>
-   Tipo de Sangre: <?php echo($_POST["sangre"]); ?><br>
-   Mail: <?php echo($_POST["email"]); ?><br>
-   Día en el que llegas: <?php echo($_POST["arrDate"]); ?><br>
-   Numero de Noches: <?php echo($_POST["nights"]); ?><br>
-   Numero de guests: <?php echo($_POST["guests"]); ?>
+   <label>Tipo de Sangre:</label><?php echo($_POST["sangre"]); ?><br>
 
+   <label>Mail: </label><?php echo($_POST["email"]); ?><br>
 
+   <label>Día en el que llegas: </label><?php echo($_POST["arrDate"]); ?><br>
+   
+   <label>Numero de Noches: </label><?php echo($_POST["nights"]); ?><br>
+
+   <label>Numero de guests: </label><?php echo($_POST["guests"]); ?>
 </body>
 
 </html>
