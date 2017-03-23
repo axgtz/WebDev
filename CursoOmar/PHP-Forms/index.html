@@ -8,19 +8,20 @@
 </head>
 
 <body>
+  <h1>Supa Form!!</h1>
     <form action="site2.php" method="post" oninput="total.value = (nights.valueAsNumber * 50) + ((guests.valueAsNumber - 1) * 10)">
             <!--Forms-->
             <label>Nombre: </label>
-            <input  type="text" name="yourname" placeholder="Write Here" required/>
+            <input type="text" name="yourname" id="yourname" placeholder="Joe Doe" required/>
 
             <label>Rola su tipo de sangre: </label>
-            <input type="text" name="sangre" placeholder="Write Here" required/>
+            <input type="text" name="sangre" id="sangre" placeholder="O+" required/>
 
             <label>Email: </label>
-            <input type="email" name="email" id="email" placeholder="Write Here" required/>
+            <input type="email" name="email" id="email" placeholder="joe@gmail.com" required/>
 
             <label>Confirm Email: </label>
-            <input type="email" name="emailCon" oninput="check(this)" placeholder="Write Here" required/>
+            <input type="email" name="emailCon" oninput="check(this)" placeholder="joe@gmail.com" required/>
 
             <label>Arrival Date: </label>
             <input type="date" name="arrDate" id="arrDate" name="arrivalDate" placeholder="Write Here" required/>
@@ -36,19 +37,23 @@
             <output id="total">¢50</output>.00
             <br><br>
 
-            <script>
-                function check(input) {
-                    if (input.value != document.getElementById("email").value) {
-                        input.setCustomValidity("Los emails no son iguales, te pasas compa");
-                    } else {
-                        input.setCustomValidity("");
-                    }
-                }
-            </script>
-
-            <input type="submit" value="Request Reservation" />
+            <input type="submit" value="Send" />
   </form>
-  
+ <script>
+    function check(input) {
+        if (input.value != document.getElementById("email").value) {
+          input.setCustomValidity("Los emails no son iguales, te pasas compa");
+        } else {
+            input.setCustomValidity("");
+        }
+    }
+</script>
+    
+    Tipo de Sangre: <?php echo $_POST["sangre"]; ?><br>
+Mail: <?php echo $_POST["email"]; ?><br>
+Día en el que llegas: <?php echo $_POST["arrDate"]; ?><br>
+Numero de Noches: <?php echo $_POST["nights"]; ?><br>
+Numero de guests: <?php echo $_POST["guests"]; ?>
 
 
 
