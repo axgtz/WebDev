@@ -9,7 +9,7 @@
 
 <body>
   <h1>Supa Form!!</h1>
-    <form action="site2.php" method="post" oninput="total.value = (nights.valueAsNumber * 50) + ((guests.valueAsNumber - 1) * 10)">
+    <form action="php/site2.php" method="post" oninput="total.value = (nights.valueAsNumber * 50) + ((guests.valueAsNumber - 1) * 10)">
             <!--Forms-->
             <label>Nombre: </label>
             <input type="text" name="yourname" id="yourname" placeholder="Joe Doe" required/>
@@ -37,7 +37,7 @@
             <output id="total">¢50</output>.00
             <br><br>
 
-            <input type="submit" value="Send" />
+            <input type="submit" value="submit" />
   </form>
  <script>
     function check(input) {
